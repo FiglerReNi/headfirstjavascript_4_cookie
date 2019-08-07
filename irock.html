@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRock - The Virtual Pet Rock</title>
+    <link rel="stylesheet" href="irock.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="irock.js"></script>
+    <script type="text/javascript" src="cookie.js"></script>
+</head>
+<body onload="resizeRock(); greeting()" onresize="resizeRock()" onbeforeunload="return confirmLeave()" onunload="return confirmLeave()">
+<div class="container">
+    <h1>My iRock</h1>
+    <div id="kep">
+        <img onclick="nameCheck()" id="kep_smile" src="rock.png" />
+    </div>
+</div>
+</body>
+</html>
